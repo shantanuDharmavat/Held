@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:id="@+id/row_friend_request">
+
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/user_profile_pic"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="13sp"
+        android:id="@+id/user_name_txt"
+        android:textColor="@color/userName_color"
+        android:layout_toRightOf="@+id/user_profile_pic"
+        android:layout_toEndOf="@+id/user_profile_pic"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:letterSpacing=".05"
+        />
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="22dp"
+        android:text="@string/FR_Accept"
+        android:id="@+id/acceptBtn"
+        android:textSize="11sp"
+        android:background="@color/positve_btn"
+        android:textColor="@color/bg_color"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/deleteBtn"
+        android:letterSpacing=".05"
+     />
+
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="22dp"
+        android:text="@string/FR_Delete"
+        android:id="@+id/deleteBtn"
+        android:textSize="11sp"
+        android:background="@color/negative_btn"
+        android:textColor="@color/bg_color"
+        android:letterSpacing=".05"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="1dp"
+        android:id="@+id/toolbar_divider_bottom"
+        android:background="@color/shadow_color"
+        android:alpha=".20"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

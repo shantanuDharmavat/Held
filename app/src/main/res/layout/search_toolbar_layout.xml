@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:background="@color/new_btn_color"
+    android:id="@+id/search_toolbar"
+
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/search_toolbar_relativeLayout"
+
+       >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_img"
+        android:src="@drawable/search"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+
+
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_txt"
+        android:editable="true"
+        android:letterSpacing=".05"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:text=""
+        android:singleLine="true"
+        android:layout_marginLeft="50dp"
+        android:layout_centerVertical="true"
+        android:imeOptions="actionSearch"
+        android:textCursorDrawable="@drawable/color_cursor"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancle_txt"
+        android:textColor="@color/white"
+        android:text="Cancel"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:letterSpacing=".05"
+        />
+   </RelativeLayout>
+</android.support.v7.widget.Toolbar>

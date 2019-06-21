@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:id="@+id/chat_row_container">
+
+
+    <ImageView
+        android:id="@+id/FRIEND_profile_pic"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/FRIEND_profile_pic">
+
+        <TextView
+            android:id="@+id/FRIEND_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/userName_color"
+            android:textSize="13sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:letterSpacing=".05"
+            android:text="UserName"/>
+
+        <TextView
+            android:id="@+id/FRIEND_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="8:12 AM"
+            android:letterSpacing=".05"
+            android:textColor="@color/chat_time_color"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/FRIEND_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FRIEND_name"
+            android:text="Text message snippet here"
+            android:textColor="@color/description_color"
+            android:letterSpacing=".05"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shadow_color"
+        android:alpha=".20"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

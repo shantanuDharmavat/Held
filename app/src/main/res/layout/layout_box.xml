@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/BOX_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BOX_top_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            >
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:id="@+id/profile_img"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_name_txt"
+                    android:fontFamily="@string/benton_sans_medium"
+                    android:textSize="13.3sp"
+                    android:textColor="#363636"
+                    android:text="username"
+                    android:letterSpacing=".05"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_txt"
+                    android:textSize="13.3sp"
+                    android:layout_below="@+id/user_name_txt"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:textColor="#898989"
+                    android:singleLine="true"
+                    android:letterSpacing=".05"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_edit_txt"
+                    android:textSize="13.3sp"
+                    android:letterSpacing=".05"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:hint="Add caption"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textColor="#898989"
+                    android:background="@null"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_time_layout"
+        android:layout_below="@+id/BOX_top_layout"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:id="@+id/post_image"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            android:layout_centerHorizontal="true"
+            android:background="#999"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/time_layout">
+            <LinearLayout
+                android:id="@+id/held_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/clock"
+                    android:layout_gravity="center"
+                    android:id="@+id/clock_img"
+                    android:padding="4dp"
+                    android:background="#66666666"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:id="@+id/box_min_txt"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:paddingLeft="7dip"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="3dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" minutes "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:id="@+id/time_txt"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="3dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:id="@+id/box_sec_txt"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="3dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" seconds"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:id="@+id/time_txt2"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingRight="7dip"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="3dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_people_count"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="by "
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:id="@+id/tv_count_people"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingLeft="7dip"
+                        android:paddingBottom="3dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:id="@+id/count_hold_people"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingBottom="3dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" people"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:id="@+id/tv_count_people2"
+                        android:background="#66666666"
+                        android:gravity="center"
+                        android:paddingRight="7dip"
+                        android:paddingBottom="3dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feed_status_icon_Layout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="17.5dp"
+                android:layout_height="17.5dp"
+                custom:civ_border_color="@color/white"
+                custom:civ_border_width="1dp"
+                android:id="@+id/white_ring"
+                android:src="@drawable/transperant"
+                android:layout_marginRight="17.5dp"
+                android:layout_marginBottom="17.5dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="12.5dp"
+                android:layout_height="12.5dp"
+                android:layout_marginLeft="2.33dp"
+                android:layout_marginTop="2.33dp"
+                android:id="@+id/feed_status_icon"
+
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

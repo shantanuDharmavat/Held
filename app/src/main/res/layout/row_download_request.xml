@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_download_request">
+
+
+        <ImageView
+            android:id="@+id/user_profile_pic"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/user_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_profile_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@+id/user_profile_pic"
+            android:text="UserName"
+            android:letterSpacing=".05"
+            android:textColor="@color/userName_color"
+            />
+
+
+            <Button
+                android:id="@+id/acceptBtn"
+                android:layout_width="57dp"
+                android:layout_height="22dp"
+                android:text="@string/FR_Accept"
+                android:textSize="11sp"
+                android:background="@color/positve_btn"
+                android:textColor="@color/bg_color"
+                android:layout_alignBottom="@+id/user_profile_pic"
+                android:layout_alignLeft="@+id/user_name_txt"
+                android:layout_alignStart="@+id/user_name_txt"
+                android:letterSpacing=".05"
+                />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="57dp"
+                android:layout_height="22dp"
+                android:text="@string/FR_Delete"
+                android:textSize="11sp"
+                android:background="@color/negative_btn"
+                android:textColor="@color/bg_color"
+                android:layout_toRightOf="@+id/acceptBtn"
+                android:layout_alignTop="@+id/acceptBtn"
+                android:layout_marginLeft="12dp"
+                android:letterSpacing=".05"/>
+
+
+        <ImageView
+            android:id="@+id/post_pic"
+            android:layout_width="86dp"
+            android:layout_height="43dp"
+            android:layout_alignTop="@+id/user_profile_pic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/toolbar_divider_bottom"
+        android:background="@color/shadow_color"
+        android:alpha=".20"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+         />
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <!-- <android.support.design.widget.TabLayout
+         android:id="@+id/NOTIFY_tab_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#265092"
+         android:textSize="18sp"
+         app:tabIndicatorColor="#1affffff"
+         app:tabSelectedTextColor="#ffffff"
+         app:tabTextColor="#4f94cc">
+
+     </android.support.design.widget.TabLayout>
+ -->
+    <LinearLayout
+        android:id="@+id/NOTIFY_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f5f7f3"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/NOTIFY_af_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/selected_tab_color">
+
+            <TextView
+                android:id="@+id/NOTIFY_feed_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:text="Activity\nFeed"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:letterSpacing=".05"
+                />
+
+            <TextView
+                android:id="@+id/NOTIFY_feed_activity_count"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="#ffcc33"
+                android:textColor="#1c1b1d"
+                android:text="21"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:letterSpacing=".05"
+                android:layout_alignBaseline="@+id/NOTIFY_feed_activity"
+                android:layout_alignBottom="@+id/NOTIFY_feed_activity"
+                android:layout_toRightOf="@+id/NOTIFY_feed_activity"
+                android:layout_toEndOf="@+id/NOTIFY_feed_activity"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NOTIFY_dr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/NOTIFY_download_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:text="Download\nRequests"
+                android:textColor="@color/unselected_tab_txt_color"
+                android:textSize="12sp"
+                android:letterSpacing=".05"
+                />
+
+            <TextView
+                android:id="@+id/NOTIFY_download_request_count"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="#ffcc33"
+                android:textColor="#1c1b1d"
+                android:text="21"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:letterSpacing=".05"
+                android:layout_alignBaseline="@+id/NOTIFY_download_request"
+                android:layout_alignBottom="@+id/NOTIFY_download_request"
+                android:layout_toRightOf="@+id/NOTIFY_download_request"
+                android:layout_toEndOf="@+id/NOTIFY_download_request"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NOTIFY_fr_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/NOTIFY_friend_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="left"
+                android:text="Friend\nRequests"
+                android:textColor="@color/unselected_tab_txt_color"
+                android:textSize="12sp"
+                android:letterSpacing=".05"
+                />
+
+            <TextView
+                android:id="@+id/NOTIFY_friend_request_count"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="#ffcc33"
+                android:textColor="#1c1b1d"
+                android:text="21"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:letterSpacing=".05"
+                android:layout_alignBaseline="@+id/NOTIFY_friend_request"
+                android:layout_alignBottom="@+id/NOTIFY_friend_request"
+                android:layout_toRightOf="@+id/NOTIFY_friend_request"
+                android:layout_toEndOf="@+id/NOTIFY_friend_request" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.held.customview.CustomViewPager
+        android:id="@+id/NOTIFY_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/NOTIFY_tab_layout" />
+
+</RelativeLayout>

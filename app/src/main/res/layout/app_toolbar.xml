@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:id="@+id/toolbar_main"
+    android:visibility="visible"
+    android:elevation="4dp"
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar_layout"
+
+    android:layout_marginRight="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_chat_img"
+        android:src="@drawable/chat"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"/>
+    <TextView
+        android:id="@+id/tvChatIndicator"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_toRightOf="@+id/toolbar_chat_img"
+        android:layout_toEndOf="@+id/toolbar_chat_img"
+        android:text="7"
+        android:textColor="@color/selected_tab_color"
+        android:textSize="10sp"
+        android:visibility="gone"
+        android:background="#ffcc33"
+        android:letterSpacing=".05"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_invite_txt"
+        android:textColor="@color/white"
+        android:text="Invite"
+        android:textSize="13sp"
+        android:letterSpacing=".05"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@id/toolbar_chat_img"
+        android:layout_toRightOf="@id/toolbar_chat_img"
+        android:paddingRight="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_title_txt"
+        android:textColor="@color/white"
+        android:text="Home"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing=".05"
+        android:layout_centerInParent="true"
+        />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_search_edt_txt"
+        android:editable="true"
+        android:maxLines="1"
+        android:hint="Search...."
+        android:inputType="text"
+        android:textSize="16sp"
+        android:letterSpacing=".05"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@id/toolbar_invite_txt"
+        android:layout_toRightOf="@id/toolbar_invite_txt"
+        android:layout_toLeftOf="@+id/toolbar_notification_img"
+        android:visibility="gone"
+        />
+
+
+        <!-- com.held.customview.CustomTextView
+            android:id="@+id/TOOLBAR_user_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/TOOLBAR_notification_img"
+            android:layout_toRightOf="@+id/TOOLBAR_chat_img"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            custom:typeFace="@string/freight_sans_medium" / -->
+
+
+    <!-- ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_search_img"
+        android:src="@drawable/search"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/toolbar_notification_img"
+        android:layout_toStartOf="@+id/toolbar_notification_img" / -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_notification_img"
+        android:src="@drawable/notification"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/toolbar_post_img"
+        android:layout_toStartOf="@+id/toolbar_post_img"
+        android:padding="4dp"/>
+    <TextView
+        android:id="@+id/tvNotificationIndicator"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_toLeftOf="@+id/toolbar_post_img"
+        android:layout_toStartOf="@+id/toolbar_post_img"
+        android:layout_marginRight="8dp"
+        android:text="6"
+        android:background="#ffcc33"
+        android:textColor="@color/selected_tab_color"
+        android:textSize="10sp"
+        android:visibility="gone"
+
+        android:letterSpacing=".05"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_post_img"
+        android:src="@drawable/camera"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="4dp"
+
+         />
+
+</RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/statusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/statusbar_color"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        ></View>
+
+    <include layout="@layout/app_toolbar" android:id="@+id/toolbar"
+
+        ></include>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_invite"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="6dp"
+            android:text="Invite a friend"
+            android:background="@color/new_btn_color"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvInviteCount"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="4 invites left"
+            android:layout_below="@+id/bt_invite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInviteCount"
+            android:layout_marginTop="40dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</LinearLayout>

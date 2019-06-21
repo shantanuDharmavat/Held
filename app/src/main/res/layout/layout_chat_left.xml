@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CHATLEFT_top_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    >
+    <ImageView
+        android:id="@+id/CHATLEFT_profile_img"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="7dp"
+        />
+    <LinearLayout
+        android:id="@+id/chat_time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/chatBox_left_color"
+        android:alpha=".95"
+        android:layout_toRightOf="@+id/CHATLEFT_profile_img"
+        android:orientation="vertical"
+        android:maxWidth="220dp"
+        android:minHeight="43dp"
+        >
+        <!--<TextView-->
+            <!--android:id="@+id/CHATLEFT_user_name_txt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="7dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:layout_toRightOf="@+id/CHATLEFT_profile_img"-->
+            <!--android:textColor="@color/userName_color"-->
+            <!--android:textSize="13sp"-->
+            <!--android:text="UserName"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/CHATLEFT_des_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:minLines="1"
+            android:singleLine="false"
+            android:text="Hello"
+            android:layout_gravity="left"
+            android:textColor="@color/description_color"
+            android:textSize="13sp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="7dp"
+            android:letterSpacing=".05"
+            android:maxWidth="220dp"
+             />
+        <TextView
+            android:id="@+id/CHATLEFT_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/chatBox_left_time_color"
+            android:textSize="9sp"
+            android:text="time"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_below="@+id/CHATLEFT_des_txt"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="7dp"
+            android:letterSpacing=".05"
+             />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:actionBarStyle">@style/MyTheme</item>-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="colorPrimary">@color/new_btn_color</item>
+        <item name="colorPrimaryDark">@color/statusbar_color</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+
+
+    <declare-styleable name="CustomTypeFace">
+        <attr name="typeFace" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="shadow" format="boolean"/>
+        <attr name="shadow_color" format="color"/>
+        <attr name="shadow_radius" format="float"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="circularImageViewStyle">
+
+    </declare-styleable>
+
+
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+
+    android:id="@+id/fragment_chat_layout">
+    <ScrollView
+        android:id="@+id/scrollParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/background_imageView"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+
+          />
+    </ScrollView>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/CHAT_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/CHAT_bottom_layout"
+    android:layout_centerInParent="true"
+    >
+</android.support.v7.widget.RecyclerView>
+    <!-- ImageView
+        android:id="@+id/CHAT_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_download" / -->
+
+    <RelativeLayout
+        android:id="@+id/CHAT_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color"
+        android:layout_marginTop="5dp"
+        android:alpha=".70"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/bg_color"
+            android:padding="10dp"
+            >
+
+            <EditText
+                android:id="@+id/CHAT_message"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/CHAT_submit_btn"
+                android:background="@layout/chat_txt_border"
+                android:minLines="1"
+                android:singleLine="false"
+                android:scrollbars="vertical"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:letterSpacing=".05"
+             />
+
+            <Button
+                android:id="@+id/CHAT_submit_btn"
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/chat_submitBtn_color"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:letterSpacing=".05"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

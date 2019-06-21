@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/statusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/statusbar_color"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        ></View>
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"></FrameLayout>
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/custom_toolbar">
+    <include layout="@layout/app_toolbar"
+        ></include>
+</RelativeLayout>
+
+
+</LinearLayout>

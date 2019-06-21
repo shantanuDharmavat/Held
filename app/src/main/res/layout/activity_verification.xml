@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    <!--<View-->
+        <!--android:id="@+id/statusBarView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:background="@color/statusbar_color"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:visibility="visible"-->
+        <!--></View>-->
+    <ImageView
+        android:id="@+id/VER_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main_layout"
+        android:gravity="center"
+        android:background="@color/bg_color"
+        android:layout_marginTop="85dp"
+        android:layout_below="@id/VER_back"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/VERIFICATION_username_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="HI, jay kapasi"
+            android:textAllCaps="false"
+            android:textColor="#acacac"
+            android:textSize="16sp"
+            android:fontFamily="@string/benton_sans_book"
+            android:typeface="normal"/>
+
+    <LinearLayout
+        android:id="@+id/phone_no_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/VERIFICATION_code_sent_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="verification code sent to "
+            android:textAllCaps="false"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:fontFamily="@string/benton_sans_book"
+            android:typeface="normal" />
+        <TextView
+            android:id="@+id/VERIFICATION_phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dp"
+            android:layout_alignRight="@+id/VERIFICATION_code_sent_txt"
+
+            android:text="9664227310"
+            android:textAllCaps="false"
+            android:textColor="#acacac"
+            android:textSize="12sp"
+            android:fontFamily="@string/benton_sans_medium"
+            android:typeface="normal" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/VERIFICATION_code_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#30898989"
+        ></View>
+</LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/top_line">
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#30898989"
+                    ></View>
+        <EditText
+                    android:id="@+id/VERIFICATION_code_one"
+                    android:layout_width="285dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/verification_text_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#acacac"
+                    android:textCursorDrawable="@drawable/cursor_background"
+                    android:textSize="18sp"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:typeface="normal"
+                    />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#30898989"></View>
+                <EditText
+                    android:id="@+id/VERIFICATION_code_two"
+                    android:layout_width="285dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#acacac"
+                    android:background="@drawable/verification_text_border"
+                    android:textSize="18sp"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:typeface="normal" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#30898989"></View>
+
+                <EditText
+                    android:id="@+id/VERIFICATION_code_three"
+                    android:layout_width="285dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#acacac"
+                    android:background="@drawable/verification_text_border"
+                    android:textSize="18sp"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:typeface="normal" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#30898989"></View>
+
+                <EditText
+                    android:id="@+id/VERIFICATION_code_four"
+                    android:layout_width="285dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#acacac"
+                    android:background="@drawable/verification_text_border"
+                    android:textSize="18sp"
+                    android:fontFamily="@string/benton_sans_book"
+                    android:typeface="normal" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#30898989"></View>
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:id="@+id/bottom_line">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#30898989"
+                    ></View>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/VERIFICATION_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/VERIFICATION_sms_resend_txt"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="68dp"
+                android:text="Resend SMS"
+                android:textColor="#acacac"
+                android:textSize="11sp"
+                android:fontFamily="@string/benton_sans_book"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/VERIFICATION_voice_call_txt"
+                android:layout_width="0dp"
+                android:gravity="right|center_vertical"
+                android:paddingRight="68dp"
+                android:layout_height="45dp"
+                android:layout_weight="5"
+                android:text="Voice Call"
+                android:textColor="#acacac"
+                android:textSize="11sp"
+                android:fontFamily="@string/benton_sans_book"
+                android:typeface="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

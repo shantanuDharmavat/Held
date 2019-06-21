@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bg_color_one" type="color">#348ac7</item>
+    <item name="bg_color_two" type="color">#7474bf</item>
+    <item name="btn_color" type="color">#85A9D6</item>
+    <item name="btn_color_country" type="color">#5CA1D2</item>
+    <item name="feed_header_color" type="color">#4C95CD</item>
+    <item name="feed_search_box_color" type="color">#498CC2</item>
+    <color name="swipe_to_refresh">#4285f4</color>
+    <color name="selected_tab_color">#4c4d4b</color>
+    <color name="unselected_tab_txt_color">#898989</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="new_btn_color">#00c6ae</color>
+    <color name="white">#ffffff</color>
+    <color name="shadow_color">#000000</color>
+    <color name="black">#000000</color>
+    <color name="positve_btn">#00c6ae</color>
+    <color name="negative_btn">#4c4d4b</color>
+    <color name="userName_color">#363636</color>
+    <color name="description_color">#898989</color>
+    <color name="chat_time_color">#333332</color>
+    <color name="chatBox_left_color">#FFFFFF</color>
+    <color name="chatBox_right_color">#252525</color>
+    <color name="chatBox_left_time_color">#1c1b1d</color>
+    <color name="chat_submitBtn_color">#171412</color>
+    <color name="friend_btn_color">#707070</color>
+    <color name="friend_req_color">#acacac</color>
+    <color name="activity_feed_txt_color">#898989</color>
+    <color name="profiel_infoBar_color">#f5f3f3</color>
+    <color name="statusbar_color">#028373</color>
+    <color name="control_background">#cc4285f4</color>
+
+
+
+
+
+
+
+</resources>

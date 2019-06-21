@@ -1,0 +1,312 @@
+<resources>
+    <string name="app_name">Held</string>
+
+    <!--FONTS-->
+    <string name="indie">Indie.otf</string>
+    <string name="freight_sans_medium">FreightSansMedium.TTF</string>
+    <string name="freight_sans_book">FreightSansBook.TTF</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="user_name_hint">Pick a Username (minimum 6 chars)</string>
+    <string name="benton_sans_book">BentonSansBook.otf</string>
+    <string name="benton_sans_medium">BentonSansMedium.otf</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Headline">Share Photos &amp; Chat with your \nFriends</string>
+    <string name="Have_Acctount">"Have an account ?"</string>
+    <string name="SignIn">Sign In</string>
+    <string name="error_offline_msg">Sorry! You don\'t seem to be connected to internet.</string>
+    <string name="Policy">By using Held you agree to the Terms, Cookie \nPolicy and Privacy Policy"</string>
+    <string name="Let_get_started">Lets get started by making your Profile</string>
+    <string name="ps">ps: Use that dashing pic you took </string>
+<string name="login_header">Login</string>
+    <!--API DATA-->
+    <string name="API_session_token">SESSION_TOKEN</string>
+    <string name="API_phone_no">PHONE_NUMBER</string>
+    <string name="API_user_name">USER_NAME</string>
+    <string name="API_pin">PIN</string>
+    <string name="API_user_regId">USER_REGID</string>
+    <string name="is_first_post">isFirstPost</string>
+    <string name="REG_Session_token">OLD_REG_TOKEN</string>
+    <string name="REG_RID">OLD_REG_ID</string>
+    <string name="title_activity_see_invite">See Invites</string>
+
+
+    <!--COUNTRY-CODES-->
+    <string-array name="country_codes">
+        <item>+93 (Afghanistan)</item>
+        <item>+355 (Albania)</item>
+        <item>+213 (Algeria)</item>
+        <item>+1-684 (American Samoa)</item>
+        <item>+376(Andorra)</item>
+        <item>+244 (Angola)</item>
+        <item>+1-264 (Anguilla)</item>
+        <item>+672 (Antarctica)</item>
+        <item>+1-268 (Antigua)</item>
+        <item>+54 (Argentina)</item>
+        <item>+374 (Armenia)</item>
+        <item>+297 (Aruba)</item>
+        <item>+247 (Ascension)</item>
+        <item>+61 (Australia)</item>
+        <item>+672 (Australian External Territories)</item>
+        <item>+43 (Austria)</item>
+        <item>+994 (Azerbaijan)</item>
+        <item>+1-242 (Bahamas)</item>
+        <item>+973 (Bahrain)</item>
+        <item>+880 (Bangladesh)</item>
+        <item>+1-246 (Barbados)</item>
+        <item>+1-268 (Barbuda)</item>
+        <item>+375 (Belarus)</item>
+        <item>+32 (Belgium)</item>
+        <item>+501 (Belize)</item>
+        <item>+229 (Benin)</item>
+        <item>+1-441 (Bermuda)</item>
+        <item>+975 (Bhutan)</item>
+        <item>+591 (Bolivia)</item>
+        <item>+387 (Bosnia &amp; Herzegovina)</item>
+        <item>+267 (Botswana)</item>
+        <item>+55 (Brazil)</item>
+        <item>+1-284 (British Virgin Islands)</item>
+        <item>+673 (Brunei Darussalam)</item>
+        <item>+359 (Bulgaria)</item>
+        <item>+226 (Burkina Faso)</item>
+        <item>+257 (Burundi)</item>
+        <item>+855 (Cambodia)</item>
+        <item>+237 (Cameroon)</item>
+        <item>+1 (Canada)</item>
+        <item>+238 (Cape Verde Islands)</item>
+        <item>+1-345 (Cayman Islands)</item>
+        <item>+236 (Central African Republic)</item>
+        <item>+235 (Chad)</item>
+        <item>+64 (Chatham Island(NewZealand))</item>
+        <item>+56 (Chile)</item>
+        <item>+86 (China(PRC))</item>
+        <item>+61-8 (Christmas Island)</item>
+        <item>+61 (Cocos-Keeling Islands)</item>
+        <item>+57 (Colombia)</item>
+        <item>+269 (Comoros)</item>
+        <item>+242 (Congo)</item>
+        <item>+243 (Congo,Dem.Rep.of(formerZaire))</item>
+        <item>+682 (Cook Islands)</item>
+        <item>+506 (Costa Rica)</item>
+        <item>+225 (Ivory Coast)</item>
+        <item>+385 (Croatia)</item>
+        <item>+53 (Cuba)</item>
+        <item>+5399 (Cuba(Guantanamo Bay))</item>
+        <item>+599 (Curaçao)</item>
+        <item>+357 (Cyprus)</item>
+        <item>+420 (Czech Republic)</item>
+        <item>+45 (Denmark)</item>
+        <item>+246 (Diego Garcia)</item>
+        <item>+253 (Djibouti)</item>
+        <item>+1-767 (Dominica)</item>
+        <item>+670 (EastTimor)</item>
+        <item>+56 (Easter Island)</item>
+        <item>+593 (Ecuador)</item>
+        <item>+20 (Egypt)</item>
+        <item>+503 (ElSalvador)</item>
+        <item>+240 (Equatorial Guinea)</item>
+        <item>+291 (Eritrea)</item>
+        <item>+372 (Estonia)</item>
+        <item>+251 (Ethiopia)</item>
+        <item>+500 (Falkland Islands(Malvinas))</item>
+        <item>+298 (Faroe Islands)</item>
+        <item>+679 (Fiji Islands)</item>
+        <item>+358 (Finland)</item>
+        <item>+33 (France)</item>
+        <item>+596 (French Antilles)</item>
+        <item>+594 (French Guiana)</item>
+        <item>+689 (French Polynesia)</item>
+        <item>+241 (Gabonese Republic)</item>
+        <item>+220 (Gambia)</item>
+        <item>+995 (Georgia)</item>
+        <item>+49 (Germany)</item>
+        <item>+233 (Ghana)</item>
+        <item>+350 (Gibraltar)</item>
+        <item>+30 (Greece)</item>
+        <item>+299 (Greenland)</item>
+        <item>+1-473 (Grenada)</item>
+        <item>+590 (Guadeloupe)</item>
+        <item>+1-671 (Guam)</item>
+        <item>+5399 (Guantanamo Bay)</item>
+        <item>+502 (Guatemala)</item>
+        <item>+245 (Guinea-Bissau)</item>
+        <item>+224 (Guinea)</item>
+        <item>+592 (Guyana)</item>
+        <item>+509 (Haiti)</item>
+        <item>+504 (Honduras)</item>
+        <item>+852 (HongKong)</item>
+        <item>+36 (Hungary)</item>
+        <item>+354 (Iceland)</item>
+        <item>+91 (India)</item>
+        <item>+62 (Indonesia)</item>
+        <item>+98 (Iran)</item>
+        <item>+964 (Iraq)</item>
+        <item>+353 (Ireland)</item>
+        <item>+972 (Israel)</item>
+        <item>+39 (Italy)</item>
+        <item>+1-876 (Jamaica)</item>
+        <item>+81 (Japan)</item>
+        <item>+962 (Jordan)</item>
+        <item>+7 (Kazakhstan)</item>
+        <item>+254 (Kenya)</item>
+        <item>+686 (Kiribati)</item>
+        <item>+850 (Korea(North))</item>
+        <item>+82 (Korea(South))</item>
+        <item>+965 (Kuwait)</item>
+        <item>+996 (Kyrgyz Republic)</item>
+        <item>+856 (Laos)</item>
+        <item>+371 (Latvia)</item>
+        <item>+961 (Lebanon)</item>
+        <item>+266 (Lesotho)</item>
+        <item>+231 (Liberia)</item>
+        <item>+218 (Libya)</item>
+        <item>+423 (Liechtenstein)</item>
+        <item>+370 (Lithuania)</item>
+        <item>+352 (Luxembourg)</item>
+        <item>+853 (Macao)</item>
+        <item>+389 (Macedonia)</item>
+        <item>+261 (Madagascar)</item>
+        <item>+265 (Malawi)</item>
+        <item>+60 (Malaysia)</item>
+        <item>+960 (Maldives)</item>
+        <item>+223 (Mali Republic)</item>
+        <item>+356 (Malta)</item>
+        <item>+692 (Marshal lIslands)</item>
+        <item>+596 (Martinique)</item>
+        <item>+222 (Mauritania)</item>
+        <item>+230 (Mauritius)</item>
+        <item>+269 (Mayotte Island)</item>
+        <item>+52 (Mexico)</item>
+        <item>+691 (Micronesia)</item>
+        <item>+1-808 (Midway Island)</item>
+        <item>+373 (Moldova)</item>
+        <item>+377 (Monaco)</item>
+        <item>+976 (Mongolia)</item>
+        <item>+382 (Montenegro)</item>
+        <item>+1-664 (Montserrat)</item>
+        <item>+212 (Morocco)</item>
+        <item>+258 (Mozambique)</item>
+        <item>+95 (Myanmar)</item>
+        <item>+264 (Namibia)</item>
+        <item>+674 (Nauru)</item>
+        <item>+977 (Nepal)</item>
+        <item>+31 (Netherlands)</item>
+        <item>+599 (Netherlands Antilles)</item>
+        <item>+1-869 (Nevis)</item>
+        <item>+687 (NewCaledonia)</item>
+        <item>+64 (NewZealand)</item>
+        <item>+505 (Nicaragua)</item>
+        <item>+227 (Niger)</item>
+        <item>+234 (Nigeria)</item>
+        <item>+683 (Niue)</item>
+        <item>+672 (Norfolk Island)</item>
+        <item>+47 (Norway)</item>
+        <item>+968 (Oman)</item>
+        <item>+92 (Pakistan)</item>
+        <item>+680 (Palau)</item>
+        <item>+970 (Palestinian Settlements)</item>
+        <item>+507 (Panama)</item>
+        <item>+675 (Papua New Guinea)</item>
+        <item>+595 (Paraguay)</item>
+        <item>+51 (Peru)</item>
+        <item>+63 (Philippines)</item>
+        <item>+48 (Poland)</item>
+        <item>+351 (Portugal)</item>
+        <item>+974 (Qatar)</item>
+        <item>+262 (Réunion Island)</item>
+        <item>+40 (Romania)</item>
+        <item>+7 (Russia)</item>
+        <item>+250 (Rwandese Republic)</item>
+        <item>+290 (St.Helena)</item>
+        <item>+1-869 (St.Kitts/Nevis)</item>
+        <item>+1-758 (St.Lucia)</item>
+        <item>+508 (St.Pierre &amp; Miquelon)</item>
+        <item>+1-784 (St.Vincent &amp; Grenadines)</item>
+        <item>+685 (Samoa)</item>
+        <item>+378 (SanMarino)</item>
+        <item>+239 (SãoToméand Principe)</item>
+        <item>+966 (Saudi Arabia)</item>
+        <item>+221 (Senegal)</item>
+        <item>+381 (Serbia)</item>
+        <item>+248 (Seychelles Republic)</item>
+        <item>+232 (Sierra Leone)</item>
+        <item>+65 (Singapore)</item>
+        <item>+421 (Slovak Republic)</item>
+        <item>+386 (Slovenia)</item>
+        <item>+677 (Solomon Islands)</item>
+        <item>+252 (Somali Democratic Republic)</item>
+        <item>+27 (South Africa)</item>
+        <item>+34 (Spain)</item>
+        <item>+94 (SriLanka)</item>
+        <item>+249 (Sudan)</item>
+        <item>+597 (Suriname)</item>
+        <item>+268 (Swaziland)</item>
+        <item>+46 (Sweden)</item>
+        <item>+41 (Switzerland)</item>
+        <item>+963 (Syria)</item>
+        <item>+886 (Taiwan)</item>
+        <item>+992 (Tajikistan)</item>
+        <item>+255 (Tanzania)</item>
+        <item>+66 (Thailand)</item>
+        <item>+670 (Timor Leste)</item>
+        <item>+228 (Togolese Republic)</item>
+        <item>+690 (Tokelau)</item>
+        <item>+676 (Tonga Islands)</item>
+        <item>+1-868 (Trinidad &amp; Tobago)</item>
+        <item>+216 (Tunisia)</item>
+        <item>+90 (Turkey)</item>
+        <item>+993 (Turkmenistan)</item>
+        <item>+1-649 (Turksand Caicos Islands)</item>
+        <item>+688 (Tuvalu)</item>
+        <item>+256 (Uganda)</item>
+        <item>+380 (Ukraine)</item>
+        <item>+971 (United Arab Emirates)</item>
+        <item>+44 (United Kingdom)</item>
+        <item>+1 (United States of America)</item>
+        <item>+1-340 (US Virgin Islands)</item>
+        <item>+598(Uruguay)</item>
+        <item>+998 (Uzbekistan)</item>
+        <item>+678 (Vanuatu)</item>
+        <item>+379 (Vatican City)</item>
+        <item>+58 (Venezuela)</item>
+        <item>+84 (Vietnam)</item>
+        <item>+808 (Wake Island)</item>
+        <item>+967 (Yemen)</item>
+        <item>+260 (Zambia)</item>
+        <item>+255 (Zanzibar)</item>
+        <item>+263 (Zimbabwe)</item>
+    </string-array>
+
+    <!--<string name="sender_id">696193089870</string>-->
+    <string name="sender_id">207813929540</string>
+    <string name="API_registration_key">REG_KEY</string>
+    <string name="API_gcm_registration_key">GCM_KEY</string>
+    <string name="API_app_version">APP_VERSION</string>
+    <string name="HELD_held">Held</string>
+    <string name="error_progress_dialog_null_call_reset">ProgressDialog is null. Make sure you have called resetDialog() before calling this</string>
+    <string name="API_DOWNLOAD_REQUEST_COUNT">DOWNLOAD_REQUEST_COUNT</string>
+    <string name="API_HELD_COUNT">HELD_COUNT</string>
+    <string name="API_FRIEND_REQUEST_COUNT">FRIEND_REQUEST_COUNT</string>
+
+    <string name="FR_Accept">Accept</string>
+    <string name="FR_Delete">Delete</string>
+    <string name="FR_SendReq">Send Friend Request</string>
+    <string name="FR_UndoReq">Undo Friend Request</string>
+
+    <string name="API_user_img">USER_IMG</string>
+    <string name="title_activity_seen_by">Seen By</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_profilepic_upload">Set profile photo</string>
+    <string name="title_photo_upload">Upload photo</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>

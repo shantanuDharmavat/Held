@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_color"
+
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="13sp"
+            android:id="@+id/contact_name"
+            android:textColor="@color/userName_color"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:letterSpacing=".05"
+            android:layout_gravity="center"
+           />
+    <Button
+        android:layout_width="57dp"
+        android:layout_height="22dp"
+        android:text="@string/FR_Delete"
+        android:id="@+id/deleteBtn"
+        android:textSize="11sp"
+        android:background="@color/negative_btn"
+        android:textColor="@color/bg_color"
+        android:letterSpacing=".05"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="1dp"
+        android:id="@+id/toolbar_divider_bottom"
+        android:background="@color/shadow_color"
+        android:alpha=".20"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
